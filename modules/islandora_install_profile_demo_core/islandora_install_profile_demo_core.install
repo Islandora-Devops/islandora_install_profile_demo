@@ -232,7 +232,7 @@ function islandora_install_profile_demo_core_update_8212() {
 /**
  * Deletes duplicated summary facets that are no longer used
  */
-function islandora_install_profile_demo_core_update_8213() {} {
+function islandora_install_profile_demo_core_update_8213()  {
   islandora_install_profile_demo_core_import_yml_configs([
     'facets_summary.facets_summary.summary',
     'facets_summary.facets_summary.summary_block',
@@ -285,7 +285,7 @@ function islandora_install_profile_demo_core_update_8215()
 /**
  * Removed with config dump
  */
-function islandora_install_profile_demo_core_update_8216() {} {
+function islandora_install_profile_demo_core_update_8216()  {
 islandora_install_profile_demo_core_import_yml_configs([
   'block.block.islandora_starter_theme_account_menu',
 ], PROFILE_PATH, TRUE);
@@ -296,7 +296,7 @@ islandora_install_profile_demo_core_import_yml_configs([
 // /**
 //  * Add most recent configs
 //  */
-// function islandora_install_profile_demo_core_update_8217() {} {
+// function islandora_install_profile_demo_core_update_8217()  {
 //   islandora_install_profile_demo_core_import_yml_configs([
 //     'core.entity_view_display.node.islandora_object.pdfjs',
 //     'core.entity_view_display.node.islandora_object.paged_content',
@@ -311,7 +311,7 @@ islandora_install_profile_demo_core_import_yml_configs([
 // /**
 //  * Add most recent configs
 //  */
-// function islandora_install_profile_demo_core_update_8218() {} {
+// function islandora_install_profile_demo_core_update_8218()  {
 //   islandora_install_profile_demo_core_import_yml_configs([
 //  'core.entity_view_display.node.islandora_object.basic',
 //   'core.entity_view_display.node.islandora_object.binary',
