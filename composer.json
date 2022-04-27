@@ -166,5 +166,13 @@
         "drupal/twig_xdebug": "^1.2",
         "phpspec/prophecy-phpunit": "^2"
     },
-    "minimum-stability": "dev"
+    "minimum-stability": "dev",
+    "extra": {
+        "composer-exit-on-patch-failure": true,
+        "patches": {
+            "drupal/context": {
+                "Notice: Undefined index: uuid' when placing a block from a view": "patches/context-views_blocks_no_uuid-3111414-2.patch"
+        }
+     }
+}
 }
