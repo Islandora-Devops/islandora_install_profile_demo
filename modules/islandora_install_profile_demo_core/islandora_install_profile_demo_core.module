@@ -485,7 +485,9 @@ function islandora_install_profile_demo_core_preprocess_views_view_unformatted(&
         ];
       }
       if (isset($variables['rows'][$result_index]['content']['#row'])) {
-        if ($node && $variables['rows'][$result_index]['content']['#row']->nid == $node->id()) {
+        if ($node && 
+            isset($variables['rows'][$result_index]['content']['#row']->nid) && 
+            $variables['rows'][$result_index]['content']['#row']->nid == $node->id()) {
           $row_attributes['class'] = array_merge($row_attributes['class'], ['view-members__item--is-active']);
           // Add custom row classes.
           $variables['rows'][$result_index]['attributes'] = new Attribute($row_attributes);
