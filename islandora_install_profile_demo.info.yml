@@ -83,7 +83,6 @@ dependencies:
   - drupal:block
   - drupal:breakpoint
   - drupal:ckeditor
-  - drupal:color
   - drupal:config
   - drupal:comment
   - drupal:context
